@@ -1,0 +1,15 @@
+Let's Decide - a borda count voting application for the iPhone
+
+The source code is released to the public under the GNU GPL v3. As of
+this writing, the GNU GPL is incompatible with the Apple's terms of
+distribution for iPhone applications, which pretty much means that
+without securing an additional license from the copyright holder, you
+can't take this software and publish it through Apple's application
+store yourself.
+
+What can you do with the source code, then? You can read it, learn
+from it (ostensibly), reuse it in whole or in part in other scenarios
+that are more GPL-friendly (such as GNUStep software), etc.
+
+For more information on using the software, see:
+http://www.trevisrothwell.com/software/lets-decide
