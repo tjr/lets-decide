@@ -1,5 +1,5 @@
 /*
- main.m
+ PreferencePair.m
  
  Copyright (C) 2011-2012 Trevis J. Rothwell
  
@@ -19,12 +19,15 @@
  along with Let's Decide.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <UIKit/UIKit.h>
+#import "PreferencePair.h"
 
-int main(int argc, char *argv[])
-{
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
-}
+#import "Option.h"
+#import "Voter.h"
+
+@implementation PreferencePair 
+
+@dynamic rank;
+@dynamic voter;
+@dynamic option;
+
+@end

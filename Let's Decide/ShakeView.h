@@ -1,5 +1,5 @@
 /*
- main.m
+ ShakeView.h
  
  Copyright (C) 2011-2012 Trevis J. Rothwell
  
@@ -21,10 +21,17 @@
 
 #import <UIKit/UIKit.h>
 
-int main(int argc, char *argv[])
-{
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+
+@interface ShakeView : UIView {
+    id view_delegate;
 }
+
+-(void) setShakeDelegate: (id) new_delegate;
+@end
+
+@interface NSObject (ShakeDelegate)
+
+// View Controllers using ShakeView should implement shakeHappened with
+// the code that should execute upon a shake.
+-(void) shakeHappened: (ShakeView*) view;
+@end

@@ -1,65 +1,66 @@
-//
-//  Let_s_DecideAppDelegate.m
-//  Let's Decide
-//
-//  Created by Trevis Rothwell on 1/14/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
-//
+/*
+ Let_s_DecideAppDelegate.m
+ 
+ Copyright (C) 2011-2012 Trevis J. Rothwell
+ 
+ This file is part of Let's Decide.
+ 
+ Let's Decide is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ Let's Decide is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with Let's Decide.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 #import "Let_s_DecideAppDelegate.h"
 
 @implementation Let_s_DecideAppDelegate
 
 @synthesize window = _window;
+@synthesize viewController = _viewController;
+@synthesize otunc = _otunc;
+@synthesize vtunc = _vtunc;
+@synthesize runc = _runc;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    RootViewController* rvc = [[RootViewController alloc] init];
+    self.viewController = rvc;
+    [rvc release];
+    
+    [self.window addSubview:self.viewController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
+- (void)applicationWillResignActive:(UIApplication *)application {
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-     */
+- (void)applicationDidEnterBackground:(UIApplication *)application {
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    /*
-     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-     */
+- (void)applicationWillEnterForeground:(UIApplication *)application {
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+- (void)applicationDidBecomeActive:(UIApplication *)application {
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+- (void)applicationWillTerminate:(UIApplication *)application {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
+    [_viewController release];
     [_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];
@@ -67,16 +68,10 @@
     [super dealloc];
 }
 
-- (void)awakeFromNib
-{
-    /*
-     Typically you should set up the Core Data stack here, usually by passing the managed object context to the first view controller.
-     self.<#View controller#>.managedObjectContext = self.managedObjectContext;
-    */
+- (void)awakeFromNib {
 }
 
-- (void)saveContext
-{
+- (void)saveContext {
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil)

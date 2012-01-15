@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763ECB1214C22EDA00C8AADB /* Let_s_Decide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 763ECB0F14C22EDA00C8AADB /* Let_s_Decide.xcdatamodeld */; };
+		763ECB1A14C22F1700C8AADB /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 763ECB1514C22F1700C8AADB /* Option.m */; };
+		763ECB1B14C22F1700C8AADB /* PreferencePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 763ECB1714C22F1700C8AADB /* PreferencePair.m */; };
+		763ECB1C14C22F1700C8AADB /* Voter.m in Sources */ = {isa = PBXBuildFile; fileRef = 763ECB1914C22F1700C8AADB /* Voter.m */; };
+		763ECB2314C258B600C8AADB /* COPYING.txt in Resources */ = {isa = PBXBuildFile; fileRef = 763ECB2214C258B600C8AADB /* COPYING.txt */; };
 		764FA7AB14C2200900F6AF16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764FA7AA14C2200900F6AF16 /* UIKit.framework */; };
 		764FA7AD14C2200900F6AF16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764FA7AC14C2200900F6AF16 /* Foundation.framework */; };
 		764FA7AF14C2200900F6AF16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764FA7AE14C2200900F6AF16 /* CoreGraphics.framework */; };
@@ -14,24 +19,81 @@
 		764FA7B714C2200A00F6AF16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7B514C2200A00F6AF16 /* InfoPlist.strings */; };
 		764FA7B914C2200A00F6AF16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7B814C2200A00F6AF16 /* main.m */; };
 		764FA7BD14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7BC14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m */; };
-		764FA7C014C2200A00F6AF16 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7BE14C2200A00F6AF16 /* MainWindow.xib */; };
-		764FA7C314C2200A00F6AF16 /* Let_s_Decide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7C114C2200A00F6AF16 /* Let_s_Decide.xcdatamodeld */; };
+		764FA7CE14C2249E00F6AF16 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7CD14C2249E00F6AF16 /* RootViewController.m */; };
+		764FA7E014C228D300F6AF16 /* AboutTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7D114C228D300F6AF16 /* AboutTabViewController.m */; };
+		764FA7E114C228D300F6AF16 /* AddOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7D314C228D300F6AF16 /* AddOptionViewController.m */; };
+		764FA7E214C228D300F6AF16 /* AddVoterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7D514C228D300F6AF16 /* AddVoterViewController.m */; };
+		764FA7E314C228D300F6AF16 /* EnterPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7D714C228D300F6AF16 /* EnterPreferencesViewController.m */; };
+		764FA7E414C228D300F6AF16 /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7D914C228D300F6AF16 /* OptionsTableViewController.m */; };
+		764FA7E514C228D300F6AF16 /* OptionsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7DB14C228D300F6AF16 /* OptionsTabViewController.m */; };
+		764FA7E614C228D300F6AF16 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7DD14C228D300F6AF16 /* ResultsTableViewController.m */; };
+		764FA7E714C228D300F6AF16 /* ResultsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7DF14C228D300F6AF16 /* ResultsTabViewController.m */; };
+		764FA7EA14C228FC00F6AF16 /* ShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7E914C228FC00F6AF16 /* ShakeView.m */; };
+		764FA7EF14C2290A00F6AF16 /* VotersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7EC14C2290A00F6AF16 /* VotersTableViewController.m */; };
+		764FA7F014C2290A00F6AF16 /* VotersTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764FA7EE14C2290A00F6AF16 /* VotersTabViewController.m */; };
+		764FA7F614C2298F00F6AF16 /* 98-palette.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7F214C2298F00F6AF16 /* 98-palette.png */; };
+		764FA7F714C2298F00F6AF16 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7F314C2298F00F6AF16 /* 112-group.png */; };
+		764FA7F814C2298F00F6AF16 /* 113-navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7F414C2298F00F6AF16 /* 113-navigation.png */; };
+		764FA7F914C2298F00F6AF16 /* 138-scales.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7F514C2298F00F6AF16 /* 138-scales.png */; };
+		764FA7FC14C22C0800F6AF16 /* instructions.html in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7FB14C22C0800F6AF16 /* instructions.html */; };
+		764FA7FE14C22C2600F6AF16 /* lets_decide_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA7FD14C22C2600F6AF16 /* lets_decide_180.png */; };
+		764FA80414C22CC100F6AF16 /* LD_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA80314C22CC100F6AF16 /* LD_icon.png */; };
+		764FA80614C22CCC00F6AF16 /* LD_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 764FA80514C22CCB00F6AF16 /* LD_icon_retina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763ECB1014C22EDA00C8AADB /* Let_s_Decide 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Let_s_Decide 2.xcdatamodel"; sourceTree = "<group>"; };
+		763ECB1114C22EDA00C8AADB /* Let_s_Decide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Let_s_Decide.xcdatamodel; sourceTree = "<group>"; };
+		763ECB1414C22F1700C8AADB /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		763ECB1514C22F1700C8AADB /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		763ECB1614C22F1700C8AADB /* PreferencePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencePair.h; sourceTree = "<group>"; };
+		763ECB1714C22F1700C8AADB /* PreferencePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencePair.m; sourceTree = "<group>"; };
+		763ECB1814C22F1700C8AADB /* Voter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voter.h; sourceTree = "<group>"; };
+		763ECB1914C22F1700C8AADB /* Voter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voter.m; sourceTree = "<group>"; };
+		763ECB2214C258B600C8AADB /* COPYING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYING.txt; path = ../COPYING.txt; sourceTree = "<group>"; };
 		764FA7A614C2200900F6AF16 /* Let's Decide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let's Decide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		764FA7AA14C2200900F6AF16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		764FA7AC14C2200900F6AF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		764FA7AE14C2200900F6AF16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		764FA7B014C2200900F6AF16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		764FA7B414C2200A00F6AF16 /* Let's Decide-Info.plist */ = {isa = PBXFileReference; path = "Let's Decide-Info.plist"; sourceTree = "<group>"; };
+		764FA7B414C2200A00F6AF16 /* Let's Decide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Let's Decide-Info.plist"; sourceTree = "<group>"; };
 		764FA7B614C2200A00F6AF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		764FA7B814C2200A00F6AF16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		764FA7BA14C2200A00F6AF16 /* Let's Decide-Prefix.pch */ = {isa = PBXFileReference; path = "Let's Decide-Prefix.pch"; sourceTree = "<group>"; };
-		764FA7BB14C2200A00F6AF16 /* Let_s_DecideAppDelegate.h */ = {isa = PBXFileReference; path = Let_s_DecideAppDelegate.h; sourceTree = "<group>"; };
-		764FA7BC14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Let_s_DecideAppDelegate.m; sourceTree = "<group>"; };
-		764FA7BF14C2200A00F6AF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		764FA7C214C2200A00F6AF16 /* Let_s_Decide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Let_s_Decide.xcdatamodel; sourceTree = "<group>"; };
+		764FA7BA14C2200A00F6AF16 /* Let's Decide-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Let's Decide-Prefix.pch"; sourceTree = "<group>"; };
+		764FA7BB14C2200A00F6AF16 /* Let_s_DecideAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Let_s_DecideAppDelegate.h; path = "Let's Decide/Let_s_DecideAppDelegate.h"; sourceTree = "<group>"; };
+		764FA7BC14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Let_s_DecideAppDelegate.m; path = "Let's Decide/Let_s_DecideAppDelegate.m"; sourceTree = "<group>"; };
+		764FA7CC14C2249E00F6AF16 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		764FA7CD14C2249E00F6AF16 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		764FA7D014C228D300F6AF16 /* AboutTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTabViewController.h; sourceTree = "<group>"; };
+		764FA7D114C228D300F6AF16 /* AboutTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTabViewController.m; sourceTree = "<group>"; };
+		764FA7D214C228D300F6AF16 /* AddOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOptionViewController.h; sourceTree = "<group>"; };
+		764FA7D314C228D300F6AF16 /* AddOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOptionViewController.m; sourceTree = "<group>"; };
+		764FA7D414C228D300F6AF16 /* AddVoterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVoterViewController.h; sourceTree = "<group>"; };
+		764FA7D514C228D300F6AF16 /* AddVoterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVoterViewController.m; sourceTree = "<group>"; };
+		764FA7D614C228D300F6AF16 /* EnterPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPreferencesViewController.h; sourceTree = "<group>"; };
+		764FA7D714C228D300F6AF16 /* EnterPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPreferencesViewController.m; sourceTree = "<group>"; };
+		764FA7D814C228D300F6AF16 /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
+		764FA7D914C228D300F6AF16 /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
+		764FA7DA14C228D300F6AF16 /* OptionsTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTabViewController.h; sourceTree = "<group>"; };
+		764FA7DB14C228D300F6AF16 /* OptionsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTabViewController.m; sourceTree = "<group>"; };
+		764FA7DC14C228D300F6AF16 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		764FA7DD14C228D300F6AF16 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		764FA7DE14C228D300F6AF16 /* ResultsTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTabViewController.h; sourceTree = "<group>"; };
+		764FA7DF14C228D300F6AF16 /* ResultsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTabViewController.m; sourceTree = "<group>"; };
+		764FA7E814C228FC00F6AF16 /* ShakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeView.h; sourceTree = "<group>"; };
+		764FA7E914C228FC00F6AF16 /* ShakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeView.m; sourceTree = "<group>"; };
+		764FA7EB14C2290A00F6AF16 /* VotersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VotersTableViewController.h; sourceTree = "<group>"; };
+		764FA7EC14C2290A00F6AF16 /* VotersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VotersTableViewController.m; sourceTree = "<group>"; };
+		764FA7ED14C2290A00F6AF16 /* VotersTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VotersTabViewController.h; sourceTree = "<group>"; };
+		764FA7EE14C2290A00F6AF16 /* VotersTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VotersTabViewController.m; sourceTree = "<group>"; };
+		764FA7F214C2298F00F6AF16 /* 98-palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98-palette.png"; sourceTree = "<group>"; };
+		764FA7F314C2298F00F6AF16 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
+		764FA7F414C2298F00F6AF16 /* 113-navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "113-navigation.png"; sourceTree = "<group>"; };
+		764FA7F514C2298F00F6AF16 /* 138-scales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "138-scales.png"; sourceTree = "<group>"; };
+		764FA7FB14C22C0800F6AF16 /* instructions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = instructions.html; sourceTree = "<group>"; };
+		764FA7FD14C22C2600F6AF16 /* lets_decide_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lets_decide_180.png; sourceTree = "<group>"; };
+		764FA80314C22CC100F6AF16 /* LD_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LD_icon.png; path = ../LD_icon.png; sourceTree = "<group>"; };
+		764FA80514C22CCB00F6AF16 /* LD_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LD_icon_retina.png; path = ../LD_icon_retina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +111,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		763ECB1314C22EF200C8AADB /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				763ECB1414C22F1700C8AADB /* Option.h */,
+				763ECB1514C22F1700C8AADB /* Option.m */,
+				763ECB1614C22F1700C8AADB /* PreferencePair.h */,
+				763ECB1714C22F1700C8AADB /* PreferencePair.m */,
+				763ECB1814C22F1700C8AADB /* Voter.h */,
+				763ECB1914C22F1700C8AADB /* Voter.m */,
+				763ECB0F14C22EDA00C8AADB /* Let_s_Decide.xcdatamodeld */,
+			);
+			name = "Data Models";
+			path = "Let's Decide";
+			sourceTree = "<group>";
+		};
+		763ECB2114C2308100C8AADB /* Let's Decide */ = {
+			isa = PBXGroup;
+			children = (
+				763ECB1314C22EF200C8AADB /* Data Models */,
+				764FA7FA14C2299600F6AF16 /* Images */,
+				764FA7F114C2293000F6AF16 /* Views */,
+				764FA7CF14C2250700F6AF16 /* View Controllers */,
+				764FA7BB14C2200A00F6AF16 /* Let_s_DecideAppDelegate.h */,
+				764FA7BC14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m */,
+				764FA7B314C2200A00F6AF16 /* Supporting Files */,
+			);
+			name = "Let's Decide";
+			sourceTree = "<group>";
+		};
 		764FA79B14C2200900F6AF16 = {
 			isa = PBXGroup;
 			children = (
-				764FA7B214C2200900F6AF16 /* Let's Decide */,
+				763ECB2114C2308100C8AADB /* Let's Decide */,
 				764FA7A914C2200900F6AF16 /* Frameworks */,
 				764FA7A714C2200900F6AF16 /* Products */,
 			);
@@ -77,27 +168,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		764FA7B214C2200900F6AF16 /* Let's Decide */ = {
-			isa = PBXGroup;
-			children = (
-				764FA7BB14C2200A00F6AF16 /* Let_s_DecideAppDelegate.h */,
-				764FA7BC14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m */,
-				764FA7BE14C2200A00F6AF16 /* MainWindow.xib */,
-				764FA7C114C2200A00F6AF16 /* Let_s_Decide.xcdatamodeld */,
-				764FA7B314C2200A00F6AF16 /* Supporting Files */,
-			);
-			path = "Let's Decide";
-			sourceTree = "<group>";
-		};
 		764FA7B314C2200A00F6AF16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				763ECB2214C258B600C8AADB /* COPYING.txt */,
+				764FA7FB14C22C0800F6AF16 /* instructions.html */,
 				764FA7B414C2200A00F6AF16 /* Let's Decide-Info.plist */,
 				764FA7B514C2200A00F6AF16 /* InfoPlist.strings */,
 				764FA7B814C2200A00F6AF16 /* main.m */,
 				764FA7BA14C2200A00F6AF16 /* Let's Decide-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "Let's Decide";
+			sourceTree = "<group>";
+		};
+		764FA7CF14C2250700F6AF16 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				764FA7D014C228D300F6AF16 /* AboutTabViewController.h */,
+				764FA7D114C228D300F6AF16 /* AboutTabViewController.m */,
+				764FA7D214C228D300F6AF16 /* AddOptionViewController.h */,
+				764FA7D314C228D300F6AF16 /* AddOptionViewController.m */,
+				764FA7D414C228D300F6AF16 /* AddVoterViewController.h */,
+				764FA7D514C228D300F6AF16 /* AddVoterViewController.m */,
+				764FA7D614C228D300F6AF16 /* EnterPreferencesViewController.h */,
+				764FA7D714C228D300F6AF16 /* EnterPreferencesViewController.m */,
+				764FA7D814C228D300F6AF16 /* OptionsTableViewController.h */,
+				764FA7D914C228D300F6AF16 /* OptionsTableViewController.m */,
+				764FA7DA14C228D300F6AF16 /* OptionsTabViewController.h */,
+				764FA7DB14C228D300F6AF16 /* OptionsTabViewController.m */,
+				764FA7DC14C228D300F6AF16 /* ResultsTableViewController.h */,
+				764FA7DD14C228D300F6AF16 /* ResultsTableViewController.m */,
+				764FA7DE14C228D300F6AF16 /* ResultsTabViewController.h */,
+				764FA7DF14C228D300F6AF16 /* ResultsTabViewController.m */,
+				764FA7CC14C2249E00F6AF16 /* RootViewController.h */,
+				764FA7CD14C2249E00F6AF16 /* RootViewController.m */,
+				764FA7EB14C2290A00F6AF16 /* VotersTableViewController.h */,
+				764FA7EC14C2290A00F6AF16 /* VotersTableViewController.m */,
+				764FA7ED14C2290A00F6AF16 /* VotersTabViewController.h */,
+				764FA7EE14C2290A00F6AF16 /* VotersTabViewController.m */,
+			);
+			name = "View Controllers";
+			path = "Let's Decide";
+			sourceTree = "<group>";
+		};
+		764FA7F114C2293000F6AF16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				764FA7E814C228FC00F6AF16 /* ShakeView.h */,
+				764FA7E914C228FC00F6AF16 /* ShakeView.m */,
+			);
+			name = Views;
+			path = "Let's Decide";
+			sourceTree = "<group>";
+		};
+		764FA7FA14C2299600F6AF16 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				764FA80314C22CC100F6AF16 /* LD_icon.png */,
+				764FA80514C22CCB00F6AF16 /* LD_icon_retina.png */,
+				764FA7FD14C22C2600F6AF16 /* lets_decide_180.png */,
+				764FA7F214C2298F00F6AF16 /* 98-palette.png */,
+				764FA7F314C2298F00F6AF16 /* 112-group.png */,
+				764FA7F414C2298F00F6AF16 /* 113-navigation.png */,
+				764FA7F514C2298F00F6AF16 /* 138-scales.png */,
+			);
+			name = Images;
+			path = "Let's Decide";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				764FA7B714C2200A00F6AF16 /* InfoPlist.strings in Resources */,
-				764FA7C014C2200A00F6AF16 /* MainWindow.xib in Resources */,
+				764FA7F614C2298F00F6AF16 /* 98-palette.png in Resources */,
+				764FA7F714C2298F00F6AF16 /* 112-group.png in Resources */,
+				764FA7F814C2298F00F6AF16 /* 113-navigation.png in Resources */,
+				764FA7F914C2298F00F6AF16 /* 138-scales.png in Resources */,
+				764FA7FC14C22C0800F6AF16 /* instructions.html in Resources */,
+				764FA7FE14C22C2600F6AF16 /* lets_decide_180.png in Resources */,
+				764FA80414C22CC100F6AF16 /* LD_icon.png in Resources */,
+				764FA80614C22CCC00F6AF16 /* LD_icon_retina.png in Resources */,
+				763ECB2314C258B600C8AADB /* COPYING.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +306,22 @@
 			files = (
 				764FA7B914C2200A00F6AF16 /* main.m in Sources */,
 				764FA7BD14C2200A00F6AF16 /* Let_s_DecideAppDelegate.m in Sources */,
-				764FA7C314C2200A00F6AF16 /* Let_s_Decide.xcdatamodeld in Sources */,
+				764FA7CE14C2249E00F6AF16 /* RootViewController.m in Sources */,
+				764FA7E014C228D300F6AF16 /* AboutTabViewController.m in Sources */,
+				764FA7E114C228D300F6AF16 /* AddOptionViewController.m in Sources */,
+				764FA7E214C228D300F6AF16 /* AddVoterViewController.m in Sources */,
+				764FA7E314C228D300F6AF16 /* EnterPreferencesViewController.m in Sources */,
+				764FA7E414C228D300F6AF16 /* OptionsTableViewController.m in Sources */,
+				764FA7E514C228D300F6AF16 /* OptionsTabViewController.m in Sources */,
+				764FA7E614C228D300F6AF16 /* ResultsTableViewController.m in Sources */,
+				764FA7E714C228D300F6AF16 /* ResultsTabViewController.m in Sources */,
+				764FA7EA14C228FC00F6AF16 /* ShakeView.m in Sources */,
+				764FA7EF14C2290A00F6AF16 /* VotersTableViewController.m in Sources */,
+				764FA7F014C2290A00F6AF16 /* VotersTabViewController.m in Sources */,
+				763ECB1214C22EDA00C8AADB /* Let_s_Decide.xcdatamodeld in Sources */,
+				763ECB1A14C22F1700C8AADB /* Option.m in Sources */,
+				763ECB1B14C22F1700C8AADB /* PreferencePair.m in Sources */,
+				763ECB1C14C22F1700C8AADB /* Voter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,14 +334,6 @@
 				764FA7B614C2200A00F6AF16 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		764FA7BE14C2200A00F6AF16 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				764FA7BF14C2200A00F6AF16 /* en */,
-			);
-			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -271,17 +423,20 @@
 				764FA7C814C2200A00F6AF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		764FA7C114C2200A00F6AF16 /* Let_s_Decide.xcdatamodeld */ = {
+		763ECB0F14C22EDA00C8AADB /* Let_s_Decide.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				764FA7C214C2200A00F6AF16 /* Let_s_Decide.xcdatamodel */,
+				763ECB1014C22EDA00C8AADB /* Let_s_Decide 2.xcdatamodel */,
+				763ECB1114C22EDA00C8AADB /* Let_s_Decide.xcdatamodel */,
 			);
-			currentVersion = 764FA7C214C2200A00F6AF16 /* Let_s_Decide.xcdatamodel */;
-			path = Let_s_Decide.xcdatamodeld;
+			currentVersion = 763ECB1014C22EDA00C8AADB /* Let_s_Decide 2.xcdatamodel */;
+			name = Let_s_Decide.xcdatamodeld;
+			path = ../Let_s_Decide.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

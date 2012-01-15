@@ -1,5 +1,5 @@
 /*
- main.m
+ PreferencePair.h
  
  Copyright (C) 2011-2012 Trevis J. Rothwell
  
@@ -19,12 +19,20 @@
  along with Let's Decide.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-int main(int argc, char *argv[])
+@class Option;
+@class Voter;
+
+@interface PreferencePair :  NSManagedObject  
 {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
 }
+
+@property (nonatomic, retain) NSNumber * rank;
+@property (nonatomic, retain) Voter * voter;
+@property (nonatomic, retain) Option * option;
+
+@end
+
+
+

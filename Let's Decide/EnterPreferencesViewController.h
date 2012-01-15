@@ -1,5 +1,5 @@
 /*
- main.m
+ EnterPreferencesViewController.h
  
  Copyright (C) 2011-2012 Trevis J. Rothwell
  
@@ -20,11 +20,13 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "Voter.h"
 
-int main(int argc, char *argv[])
-{
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+@interface EnterPreferencesViewController : UITableViewController {
+	Voter *voter;
+	int numberOfRows;
 }
+
+@property (nonatomic, retain) Voter *voter;
+
+@end

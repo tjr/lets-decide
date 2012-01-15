@@ -1,5 +1,5 @@
 /*
- main.m
+ AboutTabViewController.h
  
  Copyright (C) 2011-2012 Trevis J. Rothwell
  
@@ -21,10 +21,9 @@
 
 #import <UIKit/UIKit.h>
 
-int main(int argc, char *argv[])
-{
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+@interface AboutTabViewController : UIViewController <UIWebViewDelegate> {
+	UIWebView *webview;
+
 }
+
+@end
